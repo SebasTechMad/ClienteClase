@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>ejemplo</title>
-        <!--Por defecto, si ponemos 'script' lo detectará como js-->
-        <script type="text/javascript">
-            alert('hola mundo');
-        </script>
+        <!--Podemos linkear un archivo js a nuestro HTML-->
+        <script type="text/javascript" src="./index.js"></script>
     </head>
     <body>
-        <!--Faltará más explicación-->
+        <!--Primero se ejecutará el js, luego se renderizará el HTML / CSS-->
+        <h1>Hola mundo</h1>
+        
+        <!--<p onclick="alert('Hola me han hecho click')">Hola hazme clic</p>-->
+        <p id="a">Hola hazme clic</p>
     </body>
 </html>
